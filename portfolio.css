@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: titre-police;
+    src: url("LEMONMILK-Bold.otf");
+}
+
+@font-face {
+    font-family: texte-police;
+    src: url("ModernSans-Light.otf");
+}
+
+:root {
+
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+    --accent-color: #67c344;
+}
+
+.darkmode {
+    --primary-color: #212121;
+    --secondary-color: #fff;
+}
+
+.dark-mode {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+
+body {
+    background: url('https://media.discordapp.net/attachments/917717231801098260/917775691460784168/Flat-Black-Wallpaper-75-images.jpg') no-repeat center fixed;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: #1c1c1c;
+    color: black;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
+}
+
+.nav-links a,
+.dropbtn,
+.cta,
+.overlay-content a,
+.dropbtn a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav-links,
+.dropbtn {
+    list-style: none;
+    display: flex;
+    z-index: 101;
+}
+
+.nav-links li,
+.dropbtn {
+    padding: 0px 20px;
+}
+
+.nav-links li a,
+.dropbtn {
+    transition: color 0.3s ease 0s;
+}
+
+.nav-links li a:hover,
+.dropbtn:hover {
+    color: #0088a9;
+}
+
+.cta {
+    display: none;
+    padding: 9px 25px;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    border: none;
+    content: "";
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Mobile Nav */
+
+.menu {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+    width: 100%;
+}
+
+.overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav-links,
+    .cta {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background: url('ressources/banner_fond.jpg');
+    background-position: center;
+    backdrop-filter: opacity(8px);
+    text-align: center;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 10px 5px black;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+.big-title {
+    font-size: 35px;
+    font-family: titre-police;
+    transition: all 1.0s ease;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.medium-title {
+    font-size: 25px;
+    font-family: titre-police;
+    color: white
+}
+
+.first-line,
+.second-line {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(66, 66, 66);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-line {
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+
+.second-line {
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+
+.left-block {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 30px;
+}
+
+.right-block {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: white;
+}
+
+.line-text {
+    font-family: texte-police;
+    font-size: 20px;
+    text-align: center;
+}
+
+.line-text-main {
+    font-family: texte-police;
+    font-size: 20px;
+    text-align: center;
+}
+
+#bts-sio-link {
+    text-decoration: none;
+    color: #32396f;
+    cursor: pointer;
+    transition: color ease-in-out 0.1s;
+}
+
+#bts-sio-link:hover {
+    color: blue;
+}
+
+.project-column {
+    width: 100%;
+    background-color: #1c1c1cce;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    text-align: center;
+}
+
+.dl-button {
+    margin-top: 28px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #ec2884;
+    background-color: #1c1c1c;
+    color: white;
+    width: 150px;
+    font-family: titre-police;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+.dl-button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    width: 180px;
+}
+
+#barre {
+    width: 500px;
+    height: 2px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.big-stage-block {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    color: white;
+}
+
+.stage1,
+.stage2 {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.1s;
+}
+
+.p-first-line,
+.p-second-line,
+.p-third-line {
+    width: 65%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    transition: all ease-in-out 0.3s;
+}
+
+.p-r-f-l,
+.p-r-s-l,
+.p-r-t-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.gh-logo {
+    width: 30px;
+    position: absolute;
+}
+
+.blank_space {
+    width: 100%;
+    height: 50px;
+}
+
+.footer {
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0.7);
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    color: white;
+    font-family: texte-police;
+}
+
+#matete {
+    display: none;
+}
+
+.LN-section {
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.LN-section>.line-text {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#design-LN {
+    transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .stage1,
+    .stage2 {
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .first-line,
+    .second-line {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .p-first-line,
+    .p-second-line,
+    .p-third-line {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .big-stage-block {
+        flex-direction: column;
+    }
+
+    .stage1,
+    .stage2 {
+        width: 95%;
+        margin: auto;
+    }
+
+    .stage2 {
+        margin-top: 30px
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #design-LN {
+        width: 500px;
+    }
+
+    .LN-section>.line-text {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .left-block {
+        display: none;
+    }
+
+    .right-block {
+        display: block;
+        width: 100%;
+    }
+
+    #top-block {
+        border-top-left-radius: 5em;
+        border-top-right-radius: 5em;
+    }
+
+    #bottom-block {
+        border-bottom-left-radius: 5em;
+        border-bottom-right-radius: 5em;
+        margin-top: 5px;
+    }
+
+    #matete {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .p-r-f-l,
+    .p-r-s-l,
+    .p-r-t-l {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #design-LN {
+        width: 300px;
+    }
+
+    #barre {
+        width: 300px;
+    }
+
+    #logo-LN {
+        width: 100px;
+    }
+
+    .stage1,
+    .stage2 {
+        width: 100%;
+    }
+}
