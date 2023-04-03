@@ -74,12 +74,11 @@ header {
     border-right: 2px solid transparent;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
-    transition: all ease-in-out 0.1ss;
+    transition: all ease-in-out 0.1s;
 }
 
 .index-nav-button:hover {
     color: rgb(22, 165, 221);
-    text-shadow: 1px 1px 1px rgb(22, 165, 221);
 }
 
 .nav-links a,
