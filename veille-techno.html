@@ -8,44 +8,57 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/760875989529395251/959427236409266186/pikadumb.png" />
+    <link rel="icon" type="image/png"
+        href="https://cdn.discordapp.com/attachments/760875989529395251/959427236409266186/pikadumb.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background: url('ressources/background-veille.jpg') fixed; background-size: cover;">
     <header>
         <div class="social-media">
-        <a class="logo" href="index.html"><img src="https://cdn.discordapp.com/attachments/760875989529395251/959429622188081162/z_logo_crop.png" alt="logo" style="width: 50px;"></a>
-            <a class="social-link" target="_blank" href="https://github.com/zayd3ndev"><img src="https://cdn.discordapp.com/attachments/760875989529395251/964002278380040282/25231.png" style="width: 30px;"></a>
-            <a class="social-link" target="_blank" href="https://www.linkedin.com/in/alexandre-alleaume-b447b0154/"><img src="https://cdn.discordapp.com/attachments/760875989529395251/963998354252116018/LinkedIn_logo_initials.png.webp" style="width: 30px;"></a>
+            <a class="logo" href="index.html"><img
+                    src="https://cdn.discordapp.com/attachments/760875989529395251/959429622188081162/z_logo_crop.png"
+                    alt="logo" style="width: 50px;"></a>
+            <a class="social-link" target="_blank" href="https://github.com/zayden-dev"><img
+                    src="https://cdn.discordapp.com/attachments/760875989529395251/964002278380040282/25231.png"
+                    style="width: 30px;"></a>
+            <a class="social-link" target="_blank" href="https://www.linkedin.com/in/alexandre-alleaume-b447b0154/"><img
+                    src="https://cdn.discordapp.com/attachments/760875989529395251/963998354252116018/LinkedIn_logo_initials.png.webp"
+                    style="width: 30px;"></a>
         </div>
         <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="CV.pdf" download="CV" target="_blank">CV</a></li>
-                <li>
-                    <a href="veille-techno.html">Veille technologique</a></li>
+            <ul class="nav-links-index">
+                <li><a href="index.html" class="index-nav-button">Accueil</a></li>
+                <li><a href="" download="CV" target="_blank" class="index-nav-button">CV</a></li>
+                <li><a href="projekts.html" class="index-nav-button">Projets</a></li>
+                <li><a href="veille-techno.html" class="index-nav-button">Veille</a></li>
             </ul>
         </nav>
         <a class="cta " href="# "></a>
         <p class="menu cta ">Menu</p>
     </header>
     <div class="overlay"> <a class="close">&times;</a>
-        <div class="overlay-content"><a href="#">Accueil</a> <a href="#">CV</a> <a href="#">Veille Technologique</a>
+        <div class="overlay-content"><a href="index.html">Accueil</a> <a href="" download="CV" target="_blank">CV</a> <a
+                href="projekts.html">Projets</a> <a href="veille-techno.html">Veille</a>
         </div>
     </div>
     <script type="text/javascript" src="portfolio.js"></script>
     <div class="main">
         <div class="project-column">
-            <p class="big-title" style="margin-top: 20px;">Veille technologique</p>
+            <p class="big-title" style="margin-top: 20px;">Windows</p>
             <div id="barre"></div>
             <br>
-            <p class="line-text" style="width: 70%; margin-left: auto; margin-right: auto;">Pour ma veille technologique je veux vous montrer comment je m'informe dans le domaine high-tech en général grâce à par exemple l'outil :
-                <a href="https://rss.app/myfeeds" target="_blank" style="text-decoration: none;">rss.app</a><br> Aussi je suis très intéressé par le français Micode qui propose une emission hebdomadaire appelée "Underscore"</p>
-            <img src="https://cdn.discordapp.com/attachments/760875989529395251/964028512648441856/cover.e7f94069.jpg" style="width: 300px; margin-left: auto; margin-right: auto; margin-top: 40px;"> </div>
-        <div class=" footer ">
-            <p>Copyright ©, all rights reserved to Alexandre Alleaume. Designed by ZayDen <img src="https://cdn.discordapp.com/attachments/760875989529395251/920378780764242060/z_logo_circle.png " style="width: 2%; "></p>
-        </div>
+            <rssapp-wall id="EE72DXq3ok32NaoW"></rssapp-wall>
+            <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+            <p class="big-title" style="margin-top: 20px;">GPT-4</p>
+            <div id="barre"></div>
+            <br>
+            <rssapp-wall id="4EUb48DiN7XwTrVz"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+            <div class=" footer ">
+                <p>Copyright ©, all rights reserved to Alexandre Alleaume. Designed by ZayDen <img
+                        src="https://cdn.discordapp.com/attachments/760875989529395251/920378780764242060/z_logo_circle.png "
+                        style="width: 2%; "></p>
+            </div>
 </body>
 
 </html>

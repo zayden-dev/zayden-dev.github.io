@@ -33,9 +33,8 @@
 }
 
 body {
-    background: url('https://media.discordapp.net/attachments/917717231801098260/917775691460784168/Flat-Black-Wallpaper-75-images.jpg') no-repeat center fixed;
+    background-color: #212121;
     width: 100%;
-    background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
@@ -44,7 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
-    background-color: #1c1c1c;
+    background-color: #25252580;
     color: black;
 }
 
@@ -59,6 +58,30 @@ header {
     align-items: center;
 }
 
+.nav-links-index {
+    background-color: rgba(255, 255, 255, 0.671);
+    backdrop-filter: blur(6px);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.index-nav-button {
+    color: Black;
+    text-decoration: none;
+    padding: 8px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all ease-in-out 0.1ss;
+}
+
+.index-nav-button:hover {
+    color: rgb(22, 165, 221);
+    text-shadow: 1px 1px 1px rgb(22, 165, 221);
+}
+
 .nav-links a,
 .dropbtn,
 .cta,
@@ -71,6 +94,7 @@ header {
 }
 
 .nav-links,
+.nav-links-index,
 .dropbtn {
     list-style: none;
     display: flex;
@@ -78,11 +102,13 @@ header {
 }
 
 .nav-links li,
+.nav-links-index li,
 .dropbtn {
     padding: 0px 20px;
 }
 
 .nav-links li a,
+.nav-links-index li a,
 .dropbtn {
     transition: color 0.3s ease 0s;
 }
@@ -122,7 +148,8 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #24252a;
+    background-color: #000000d8;
+    backdrop-filter: blur(8px);
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
 }
@@ -174,6 +201,7 @@ header {
 @media screen and (max-width: 800px) {
 
     .nav-links,
+    .nav-links-index,
     .cta {
         display: none;
     }
@@ -195,8 +223,8 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 5px 10px 10px 5px black;
-    border-bottom-left-radius: 500px;
-    border-bottom-right-radius: 500px;
+  /*  border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
 }
 
 .big-title {
@@ -204,7 +232,10 @@ header {
     font-family: titre-police;
     transition: all 1.0s ease;
     color: white;
-    text-shadow: 1px 1px 2px black;
+}
+
+.banner>.big-title {
+    text-shadow: 3px 2px 4px black;
 }
 
 .medium-title {
@@ -219,19 +250,23 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background-color: rgb(66, 66, 66);
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
 }
 
 .first-line {
-    border-top-left-radius: 5em;
-    border-top-right-radius: 5em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
 }
 
 .second-line {
-    border-bottom-left-radius: 5em;
-    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .left-block {
@@ -251,17 +286,20 @@ header {
     justify-content: center;
     padding: 30px;
     background-color: white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .line-text {
-    font-family: texte-police;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
 .line-text-main {
-    font-family: texte-police;
-    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -278,7 +316,7 @@ header {
 
 .project-column {
     width: 100%;
-    background-color: #1c1c1cce;
+    background-color: #25252580;
     backdrop-filter: blur(3px);
     padding: 20px;
     text-align: center;
@@ -288,9 +326,9 @@ header {
     margin-top: 28px;
     padding: 10px;
     border-radius: 20px;
-    border: 2px solid #ec2884;
-    background-color: #1c1c1c;
-    color: white;
+    border: 2px solid rgb(22, 165, 221);
+    background-color: white;
+    color: black;
     width: 150px;
     font-family: titre-police;
     cursor: pointer;
@@ -298,16 +336,27 @@ header {
 }
 
 .dl-button:hover {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    width: 180px;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid rgb(28, 130, 170);
+    color: rgb(22, 165, 221);
+    width: 160px;
 }
 
 #barre {
     width: 500px;
     height: 2px;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#barre-block-index {
+    width: 500px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -334,7 +383,9 @@ header {
 
 .p-first-line,
 .p-second-line,
-.p-third-line {
+.p-third-line,
+.p-fourth-line,
+.p-fifth-line {
     width: 65%;
     background-color: white;
     color: black;
@@ -351,7 +402,9 @@ header {
 
 .p-r-f-l,
 .p-r-s-l,
-.p-r-t-l {
+.p-r-t-l
+.p-r-fth-l,
+.p-r-fifth-l {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,6 +451,10 @@ header {
     transition: all ease-in-out 0.3s;
 }
 
+#barre-block-index {
+    display:none;
+}
+
 @media screen and (max-width: 1200px) {
 
     .stage1,
@@ -417,7 +474,9 @@ header {
 
     .p-first-line,
     .p-second-line,
-    .p-third-line {
+    .p-third-line,
+    .p-fourth-line,
+    .p-fifth-line {
         width: 90%;
     }
 }
@@ -460,16 +519,21 @@ header {
         width: 100%;
     }
 
+    #barre-block-index {
+        display: block;
+        margin-bottom: 60px;
+    }
+
     #top-block {
-        border-top-left-radius: 5em;
-        border-top-right-radius: 5em;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        margin-bottom: 0;
     }
 
     #bottom-block {
-        border-bottom-left-radius: 5em;
-        border-bottom-right-radius: 5em;
-        margin-top: 5px;
-    }
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        }
 
     #matete {
         display: block;
@@ -478,7 +542,9 @@ header {
 
     .p-r-f-l,
     .p-r-s-l,
-    .p-r-t-l {
+    .p-r-t-l,
+    .p-r-fth-l,
+    .p-r-fifth-l {
         display: none;
     }
 }
@@ -498,6 +564,9 @@ header {
 
     .stage1,
     .stage2 {
+        width: 100%;
+    }
+    .first-line, .second-line{
         width: 100%;
     }
 }
