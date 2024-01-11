@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zayden's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/760875989529395251/959429622188081162/z_logo_crop.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+</head>
+
+<body style="backdrop-filter: blur(5px);">
+    <header style="background: url('ressources/banner_fond.jpg'); background-position: center; background-position-y: 900px ; box-shadow: 0px 0px 0px 0px black;">
+        <div class="social-media">
+        <a class="logo" href="index.html"><img src="https://cdn.discordapp.com/attachments/760875989529395251/959429622188081162/z_logo_crop.png" alt="logo" style="width: 50px;"></a>
+            <a class="social-link" target="_blank" href="https://github.com/zayden-dev"><img src="https://cdn.discordapp.com/attachments/760875989529395251/964002278380040282/25231.png" style="width: 30px; filter:brightness(0);"></a>
+            <a class="social-link" target="_blank" href="https://www.linkedin.com/in/alexandre-alleaume-b447b0154/"><img src="https://cdn.discordapp.com/attachments/760875989529395251/963998354252116018/LinkedIn_logo_initials.png.webp" style="width: 30px;"></a>
+        </div>
+        <nav>
+            <ul class="nav-links-index">
+                <li><a href="index.html" class="index-nav-button">Accueil</a></li>
+                <li><a href="cv.html" class="index-nav-button">CV</a></li>
+                <li><a href="projekts.html" class="index-nav-button">Expériences</a></li>
+                <!-- <li><a href="veille-techno.html" class="index-nav-button">Veille</a></li> -->
+            </ul>
+        </nav>
+        <a class="cta " href="# "></a>
+        <p class="menu cta ">Menu</p>
+    </header>
+    <div class="overlay"> <a class="close">&times;</a>
+        <div class="overlay-content"><a href="index.html">Accueil</a> <a href="cv.html">CV</a> <a href="projekts.html">Expériences</a> <!--<a href="veille-techno.html">Veille</a> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="portfolio.js"></script>
+    <div class="main">
+        <div class="banner" style="box-shadow: 0px 0px 0px 0px;">
+            <p class="big-title">Alexandre "ZayDen" Alleaume</p>
+        </div>
+        <div class="first-line " style="margin-top: 30px; ">
+            <div class="left-block " style="border-top-left-radius: 2em; ">
+                <img src="https://cdn.discordapp.com/attachments/760875989529395251/961544912740950036/1565185846050.jpg " style="width: 180px; height: 180px; border-radius: 50%; border: 2px solid black; box-shadow: 0px 1px 10px 3px black; ">
+            </div>
+            <div class="right-block " id="top-block" style="text-align: center; border-top-right-radius: 2em; border-top-left-radius: 2em; ">
+                <p class="big-title " style="font-size: 25px; margin-bottom: 20px; color: black; ">Qui suis-je ?</p>
+                <div id="matete"><img src="https://cdn.discordapp.com/attachments/760875989529395251/961544912740950036/1565185846050.jpg " style="width: 180px; height: 180px; border-radius: 50%; border: 2px solid black; box-shadow: 0px 1px 10px 3px black; "></div>
+                <p class=" line-text-main ">Je m'appelle Alexandre Alleaume, j'ai 22 ans, et je suis actuellement étudiant en recherche d'un emploi dans l'informatique.
+                    Passionné par l'informatique depuis l'âge de 5 ans, j'ai toujours été au contact d'ordinateurs et je me suis donc naturellement orienté dans ce domaine, durant mes stages et années d'études, je me suis découvert une passion pour le
+                    développement informatique, la création et le design d'applications/de sites.</p>
+                <button onclick="window.location.href='cv.html'" class="dl-button">CV</button>
+            </div>
+        </div>
+        <div class="second-line">
+            <div class="left-block" style="border-bottom-left-radius: 2em;">
+                <img src="ressources/gloubiboulga.png" style="width: 300px; height: 300px; ">
+            </div>
+            <div class="right-block" id="bottom-block" style="text-align: center;
+            border-bottom-right-radius: 2em;
+            border-bottom-left-radius: 2em;">
+                <div id="barre-block-index"></div>
+                <p class="big-title" style="font-size: 25px; margin-bottom: 20px; color: black;">Mes compétences</p>
+                <p class=" line-text-main ">Maîtrise des principaux logiciels d’Office (Word, Excel, Powerpoint) et de la GSuite (Docs, Sheets, Slides). Maîtrise de Windows et à l’aise avec Linux. Montage vidéo sur Premiere pro, montage photo et création de logo avec Adobe Photoshop
+                    et Adobe Illustrator. Connaissances approfondies dans les langages HTML et CSS pour la réalisation de site web, JavaScript, PHP et utilisation des frameworks Symfony, Angular et React.</p>
+                <button class="dl-button" onclick="window.location.href='projekts.html'">Mes projets</button>
+            </div>
+        </div>
+    </div>
+    <div class="blank_space"></div>
+    <div class="footer">
+        <p>Copyright ©, all rights reserved to Alexandre Alleaume. Designed by ZayDen <img src="https://cdn.discordapp.com/attachments/760875989529395251/920378780764242060/z_logo_circle.png " style="width: 2%; "></p>
+    </div>
+</body>
+
+</html>
