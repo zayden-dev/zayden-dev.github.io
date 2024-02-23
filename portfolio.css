@@ -414,10 +414,11 @@ header {
     width: 30px;
     position: absolute;
     transition: all ease-in-out 0.1s;
+    filter: brightness(0);
 }
 
 .gh-logo:hover {
-    filter: drop-shadow(1px 1px 1px rgb(11, 212, 219));
+    filter:  brightness(0) drop-shadow(1px 1px 1px rgb(11, 212, 219));
     transition: all ease-in-out 0.1s;
 }
 
